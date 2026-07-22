@@ -212,13 +212,24 @@ function updateMap() {
       icon: createCustomIcon(color)
     });
 
-    // Create table content for popup
+    // Create exact ArcGIS style popup structure
     let popupContentHtml = `
-      <div style="font-family: Arial, sans-serif; font-size: 12px; color: #333;">
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr style="background: #9CBCE2; font-weight: bold; text-align: center;">
-            <td colspan="2" style="padding: 5px; border: 1px solid #ccc;">${feature.properties.name}</td>
-          </tr>
+      <div class="arcgis-popup">
+        <div class="arcgis-header">
+          <span>Pop-up</span>
+          <div class="arcgis-controls">
+            <span style="font-size: 14px; margin-top: -2px;">&#8964;</span> 
+            <span style="border: 1px solid #ccc; padding: 0 4px; border-radius: 2px;">&#10064;</span>
+            <span style="font-weight: bold; margin-left: 4px;">&#10005;</span>
+          </div>
+        </div>
+        <div class="arcgis-body">
+          <div class="arcgis-layer-title"><span class="triangle">&#9658;</span> ${properties.category || 'Facilities'} (1)</div>
+          <div class="arcgis-feature-title">${feature.properties.name}</div>
+          <table class="arcgis-table">
+            <tr>
+              <td colspan="2" class="arcgis-table-title">${properties.category || 'Facilities'} - ${feature.properties.name}</td>
+            </tr>
     `;
 
     const ignoreKeys = ['name', 'category', 'styleUrl', 'styleHash', 'styleMapHash', 'icon'];
@@ -232,15 +243,21 @@ function updateMap() {
       
       popupContentHtml += `
         <tr style="background: ${bgColor};">
-          <td style="padding: 5px; border: 1px solid #ccc; font-weight: 500;">${displayKey}</td>
-          <td style="padding: 5px; border: 1px solid #ccc;">${value}</td>
+          <td style="width: 45%; color: #666;">${displayKey}</td>
+          <td style="width: 55%; font-weight: 500;">${value}</td>
         </tr>
       `;
       rowIndex++;
     }
 
     popupContentHtml += `
-        </table>
+          </table>
+        </div>
+        <div class="arcgis-footer">
+          <span>&#9664; 1 of 1 &#9654;</span>
+          <span>${latlng[1].toFixed(8)}&deg;E ${latlng[0].toFixed(8)}&deg;N</span>
+          <span style="letter-spacing: 4px;">&#128269; &#128461; &#128269;</span>
+        </div>
       </div>
     `;
 

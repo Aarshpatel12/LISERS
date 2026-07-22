@@ -11,12 +11,17 @@ const files = [
 function extractProperties(descriptionHtml) {
     if (!descriptionHtml) return {};
     
-    // We'll use regex to find all tr tags and their two td children
-    const regex = /<tr[^>]*>\s*<td[^>]*>(.*?)<\/td>\s*<td[^>]*>(.*?)<\/td>\s*<\/tr>/gi;
+    // togeojson sometimes returns description as an object { '@type': 'html', value: '...' }
+    const htmlString = typeof descriptionHtml === 'object' ? descriptionHtml.value : descriptionHtml;
+    if (typeof htmlString !== 'string') return {};
+    
+    // We'll use regex to find all tr tags and their two td children.
+    // Using [\s\S]*? to handle any potential newlines across tags.
+    const regex = /<tr[^>]*>[\s\S]*?<td[^>]*>([\s\S]*?)<\/td>[\s\S]*?<td[^>]*>([\s\S]*?)<\/td>[\s\S]*?<\/tr>/gi;
     const props = {};
     let match;
     
-    while ((match = regex.exec(descriptionHtml)) !== null) {
+    while ((match = regex.exec(htmlString)) !== null) {
         let key = match[1].replace(/<[^>]*>?/gm, '').trim(); // strip html
         let value = match[2].replace(/<[^>]*>?/gm, '').trim(); // strip html
         

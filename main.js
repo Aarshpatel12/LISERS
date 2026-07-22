@@ -224,11 +224,11 @@ function updateMap() {
           </div>
         </div>
         <div class="arcgis-body">
-          <div class="arcgis-layer-title"><span class="triangle">&#9658;</span> ${properties.category || 'Facilities'} (1)</div>
+          <div class="arcgis-layer-title"><span class="triangle">&#9658;</span> ${feature.properties.category || 'Facilities'} (1)</div>
           <div class="arcgis-feature-title">${feature.properties.name}</div>
           <table class="arcgis-table">
             <tr>
-              <td colspan="2" class="arcgis-table-title">${properties.category || 'Facilities'} - ${feature.properties.name}</td>
+              <td colspan="2" class="arcgis-table-title">${feature.properties.category || 'Facilities'} - ${feature.properties.name}</td>
             </tr>
     `;
 

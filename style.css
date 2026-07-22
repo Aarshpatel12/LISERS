@@ -307,19 +307,26 @@ body {
 @media (max-width: 768px) {
   .app-container {
     flex-direction: column-reverse;
-    padding: 10px;
-    gap: 10px;
+    padding: 0;
+    gap: 0;
   }
 
   .sidebar {
     width: 100%;
     max-height: 40vh; /* Sidebar takes bottom 40% */
-    padding: 20px;
-    gap: 20px;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+    z-index: 10;
   }
 
   .main-content {
-    border-radius: 16px;
+    border-radius: 0;
+  }
+  
+  #map {
+    border-radius: 0;
   }
 
   .details-panel {
@@ -351,6 +358,15 @@ body {
   
   .stat-value {
     font-size: 24px;
+  }
+  
+  /* Make the ArcGIS popup fit on small mobile screens */
+  .custom-gis-popup .leaflet-popup-content {
+    width: 270px !important;
+  }
+  
+  .arcgis-body {
+    max-height: 220px;
   }
 }
 

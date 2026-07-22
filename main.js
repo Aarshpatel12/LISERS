@@ -212,6 +212,45 @@ function updateMap() {
       icon: createCustomIcon(color)
     });
 
+    // Create table content for popup
+    let popupContentHtml = `
+      <div style="font-family: Arial, sans-serif; font-size: 12px; color: #333;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr style="background: #9CBCE2; font-weight: bold; text-align: center;">
+            <td colspan="2" style="padding: 5px; border: 1px solid #ccc;">${feature.properties.name}</td>
+          </tr>
+    `;
+
+    const ignoreKeys = ['name', 'category', 'styleUrl', 'styleHash', 'styleMapHash', 'icon'];
+    let rowIndex = 0;
+    
+    for (const [key, value] of Object.entries(feature.properties)) {
+      if (ignoreKeys.includes(key)) continue;
+      
+      const bgColor = rowIndex % 2 === 0 ? '#FFFFFF' : '#D4E4F3';
+      const displayKey = key.replace(/_/g, ' ');
+      
+      popupContentHtml += `
+        <tr style="background: ${bgColor};">
+          <td style="padding: 5px; border: 1px solid #ccc; font-weight: 500;">${displayKey}</td>
+          <td style="padding: 5px; border: 1px solid #ccc;">${value}</td>
+        </tr>
+      `;
+      rowIndex++;
+    }
+
+    popupContentHtml += `
+        </table>
+      </div>
+    `;
+
+    // Add Popup to marker
+    marker.bindPopup(popupContentHtml, {
+      maxWidth: 400,
+      minWidth: 300,
+      className: 'custom-gis-popup'
+    });
+
     marker.bindTooltip(`<b>${feature.properties.name}</b>`, {
       direction: 'top',
       offset: [0, -10],
@@ -219,7 +258,8 @@ function updateMap() {
     });
 
     marker.on('click', () => {
-      showDetails(feature.properties, feature);
+      // Keep the routing and radius logic
+      handleMarkerClick(feature.properties, feature);
     });
 
     markersLayer.addLayer(marker);
@@ -238,54 +278,10 @@ function updateStats(count) {
   document.getElementById('total-facilities').textContent = total;
 }
 
-function showDetails(properties, feature) {
+function handleMarkerClick(properties, feature) {
   activeVisuals.clearLayers(); // Clear previous radius/lines
 
-  const panel = document.getElementById('details-panel');
-  const title = document.getElementById('detail-title');
-  const categoryBadge = document.getElementById('detail-category');
-  const content = document.getElementById('detail-content');
-
-  title.textContent = properties.name;
-  categoryBadge.textContent = properties.category;
-  
-  // Update badge color
-  categoryBadge.className = 'category-badge ' + (categoryClasses[properties.category] || '');
-
-  // Render properties
-  content.innerHTML = '';
-  
-  const ignoreKeys = ['name', 'category', 'styleUrl', 'styleHash', 'styleMapHash', 'icon'];
-  
-  for (const [key, value] of Object.entries(properties)) {
-    if (ignoreKeys.includes(key)) continue;
-    
-    // Format key for display
-    const displayKey = key.replace(/_/g, ' ');
-
-    const row = document.createElement('div');
-    row.className = 'detail-row';
-    
-    const label = document.createElement('span');
-    label.className = 'detail-label';
-    label.textContent = displayKey;
-    
-    const val = document.createElement('span');
-    val.className = 'detail-value';
-    
-    // Handle link-like values
-    if (typeof value === 'string' && value.startsWith('http')) {
-      val.innerHTML = `<a href="${value}" target="_blank" style="color: var(--accent)">Link</a>`;
-    } else {
-      val.textContent = value;
-    }
-    
-    row.appendChild(label);
-    row.appendChild(val);
-    content.appendChild(row);
-  }
-
-  panel.classList.add('open');
+  // Removed sidebar detail panel rendering since we are using Popups now
 
   // Add Hazard Radius & Routing for Factories
   if (properties.category === 'Factories' && feature) {

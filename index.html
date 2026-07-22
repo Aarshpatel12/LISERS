@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LISERS | Ludhiana Industrial Safety & Emergency Response</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Background Elements -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <div class="app-container">
+      <!-- Sidebar / Filters -->
+      <aside class="sidebar glass-panel">
+        <div class="logo-container">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h1>LISERS</h1>
+        </div>
+        <p class="subtitle">Ludhiana Industrial Safety & Emergency Response System</p>
+        
+        <div class="filter-section">
+          <h3>Search & Filter</h3>
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search by name or chemical..." />
+          </div>
+          <div class="filter-list" id="filter-list">
+            <!-- Checkboxes will be injected here by JS -->
+          </div>
+        </div>
+
+        <div class="stats-section">
+          <h3>Dashboard Overview</h3>
+          <div class="stat-card">
+            <span class="stat-value" id="total-facilities">0</span>
+            <span class="stat-label">Total Facilities</span>
+          </div>
+        </div>
+
+        <div class="actions-section">
+          <button id="export-btn" class="action-btn outline-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Export Contacts
+          </button>
+          <button id="locate-btn" class="action-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            Locate My Position
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Map Area -->
+      <main class="main-content glass-panel">
+        <div id="map"></div>
+      </main>
+
+      <!-- Details Panel (Hidden by default) -->
+      <aside class="details-panel glass-panel" id="details-panel">
+        <button class="close-btn" id="close-details">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="details-header">
+          <h2 id="detail-title">Facility Name</h2>
+          <span class="category-badge" id="detail-category">Category</span>
+        </div>
+        <div class="details-content" id="detail-content">
+          <!-- Key/value pairs injected here -->
+        </div>
+      </aside>
+    </div>
+
+    <!-- Application Script -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

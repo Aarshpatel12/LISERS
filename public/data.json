@@ -1,0 +1,3781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89495604400008,
+          30.87512819700004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hero Steels Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00000"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89637366700003,
+          30.88020550800007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/S HERO CYCLES LTD, UNIT-5",
+        "category": "Factories"
+      },
+      "id": "ID_00001"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91053411100006,
+          30.85616633400008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "UDAY COLOUR & CHEMICALS PRIVATE LIMITED UNIT 2",
+        "category": "Factories"
+      },
+      "id": "ID_00002"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.95232223300007,
+          30.81982900000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "GATS UDYOG",
+        "category": "Factories"
+      },
+      "id": "ID_00003"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.93368044900006,
+          30.84611719300005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "TALCO RUBBER PRIVATE LIMITED  ",
+        "category": "Factories"
+      },
+      "id": "ID_00004"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90798738300003,
+          30.85547509700007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RAJU RUBBER INDUSTRIES  ",
+        "category": "Factories"
+      },
+      "id": "ID_00005"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.95217057400004,
+          30.81762660100003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "HI- TECH POLYMER PRODUCTS  ",
+        "category": "Factories"
+      },
+      "id": "ID_00006"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.92135175200008,
+          30.85849540000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pavitra Industries",
+        "category": "Factories"
+      },
+      "id": "ID_00007"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91054470200004,
+          30.85616756200005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Shiv Industries  ",
+        "category": "Factories"
+      },
+      "id": "ID_00008"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91783396700004,
+          30.85584515500005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Radiant Components Pvt. Ltd.  ",
+        "category": "Factories"
+      },
+      "id": "ID_00009"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85941156600006,
+          30.86090793900007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Malbros Plastics (India) Pvt. Ltd.  ",
+        "category": "Factories"
+      },
+      "id": "ID_00010"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88818970300008,
+          30.88040378200003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Monte Carlo Fashions Limited  ",
+        "category": "Factories"
+      },
+      "id": "ID_00011"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88818970300008,
+          30.88035130100008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "OSWAL WOOLLEN MILLS LIMITED UNIT NO 4  ",
+        "category": "Factories"
+      },
+      "id": "ID_00012"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89372633600004,
+          30.88104158800007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "OSWAL WOOLLEN MILLS LIMITED UNIT 3  ",
+        "category": "Factories"
+      },
+      "id": "ID_00013"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.01235836700005,
+          30.81491708000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SHINGORA TEXTILES PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00014"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.01038353800004,
+          30.81940237100002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "JUELLE RETAIL PRIVATE LIMITED UNIT 2  ",
+        "category": "Factories"
+      },
+      "id": "ID_00015"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.19871026100003,
+          30.75742939900005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Garewalz cold storages  ",
+        "category": "Factories"
+      },
+      "id": "ID_00016"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.20516728500007,
+          30.78374007600007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Kakkar sons cold storage",
+        "category": "Factories"
+      },
+      "id": "ID_00017"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.21377810600006,
+          30.74803504200003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SATYAM AGRO INDUSTRIES ( COLD STORE DIVISION)",
+        "category": "Factories"
+      },
+      "id": "ID_00018"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89789400000006,
+          30.88442700000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Aarti Steel International Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00019"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.94447151200006,
+          30.87288337800004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "NATIONAL RUBBER INDUSTRIES",
+        "category": "Factories"
+      },
+      "id": "ID_00020"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91599100000008,
+          30.87779510000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SUPREME RUBBER (INDIA)",
+        "category": "Factories"
+      },
+      "id": "ID_00021"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.98652340000007,
+          30.87493390000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gangotri Rubbers Ltd.",
+        "category": "Factories"
+      },
+      "id": "ID_00022"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90141184200007,
+          30.89358099000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ahuja Preci-tech inds.,",
+        "category": "Factories"
+      },
+      "id": "ID_00023"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.97080600000004,
+          30.85915000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "HITECH INTERNATIONAL",
+        "category": "Factories"
+      },
+      "id": "ID_00024"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90479800000008,
+          30.92373500000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Garg polymers",
+        "category": "Factories"
+      },
+      "id": "ID_00025"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90092000000004,
+          30.88845000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Oswal poly pack(India)",
+        "category": "Factories"
+      },
+      "id": "ID_00026"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.97008500000004,
+          30.86083800000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "JINDBA PROCESSORS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00027"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89296100000007,
+          30.88124400000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "VEE KAY TEXTILES",
+        "category": "Factories"
+      },
+      "id": "ID_00028"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90675333600007,
+          30.87913790000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/S SIDHARTH TEXTILES",
+        "category": "Factories"
+      },
+      "id": "ID_00029"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85929500000003,
+          30.93744100000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SUNDER MOHAN TRADERS",
+        "category": "Factories"
+      },
+      "id": "ID_00030"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88893678200003,
+          30.89615038100004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "K G EXPORTS",
+        "category": "Factories"
+      },
+      "id": "ID_00031"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91362100000003,
+          30.87902900000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "GSL TEXTILE INDIA PVT. LTD.",
+        "category": "Factories"
+      },
+      "id": "ID_00032"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90159568200005,
+          30.89377401300004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Makkar Textile Mills Pvt Ltd",
+        "category": "Factories"
+      },
+      "id": "ID_00033"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90140111300008,
+          30.89361781700006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SUNNY TEXTILES",
+        "category": "Factories"
+      },
+      "id": "ID_00034"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.04795900000005,
+          30.84847900000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SWAMI TEXTILES PVT LTD.UNIT-II",
+        "category": "Factories"
+      },
+      "id": "ID_00035"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90193200000004,
+          30.90176400000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RAHUL TEXTILES",
+        "category": "Factories"
+      },
+      "id": "ID_00036"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88989937300005,
+          30.89599128800006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Shifneen Textiles",
+        "category": "Factories"
+      },
+      "id": "ID_00037"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88680000000005,
+          30.90050800000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ashu printers",
+        "category": "Factories"
+      },
+      "id": "ID_00038"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89340187100004,
+          30.89628359700004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gupta printers",
+        "category": "Factories"
+      },
+      "id": "ID_00039"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88989937300005,
+          30.89599128800006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SHIFNEEN TEXTILES",
+        "category": "Factories"
+      },
+      "id": "ID_00040"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91488000000004,
+          30.87859000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ROSY SPINNING MILLS PVT.LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00041"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91488000000004,
+          30.87859000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ROSY SPINNING MILLS PVT.LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00042"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90812305700007,
+          30.87873445300005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SANCHI APPARELS",
+        "category": "Factories"
+      },
+      "id": "ID_00043"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90456668600007,
+          30.92043903000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SURBHI WEAVING FACTORY UNIT-III",
+        "category": "Factories"
+      },
+      "id": "ID_00044"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.01233185400008,
+          30.81475837500005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SHINGORA TEXTILES PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00045"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.07255000000004,
+          30.75329900000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SPORTKING INDIA LIMITED (UNIT: SPORTKING PROCESSORS)",
+        "category": "Factories"
+      },
+      "id": "ID_00046"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.13734400000004,
+          30.90317175000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "MALWA INDUSTRIES LIMITED GARMENT DIVISION",
+        "category": "Factories"
+      },
+      "id": "ID_00047"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.15240833100006,
+          30.90746915100004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "S T COTTEX EXPORTS PVT LTD - GARMENT DIVISION",
+        "category": "Factories"
+      },
+      "id": "ID_00048"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.12717000000004,
+          30.90556000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AARTI INTERNATIONAL LIMITED (DYEING & PROCESSING UNIT)",
+        "category": "Factories"
+      },
+      "id": "ID_00049"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.13347500000003,
+          30.90480800000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AARTI STEEL INTERNATIONAL LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00050"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.07266000000004,
+          30.76820000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AMA India Enterprises Private Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00051"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.00737058600004,
+          30.86780091700007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AUTO INTERNATIONAL",
+        "category": "Factories"
+      },
+      "id": "ID_00052"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87882576700008,
+          30.89807349800003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "DEEPS TOOLS PVT LTD.",
+        "category": "Factories"
+      },
+      "id": "ID_00053"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.99283534200003,
+          30.88170031400006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "FORGIX PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00054"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87535626200008,
+          30.89694126800003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KANSAL HOSIERY EXPORTS (UNIT-1)",
+        "category": "Factories"
+      },
+      "id": "ID_00055"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85825000000006,
+          30.93358000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KAY JAIN HOSIERY",
+        "category": "Factories"
+      },
+      "id": "ID_00056"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.97826522700007,
+          30.86977275900006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/S JKPL Packaging Products Limited..",
+        "category": "Factories"
+      },
+      "id": "ID_00057"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89974039800006,
+          30.88252495200004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/S SUBHASH POLYTEX LIMITED UNIT(III)",
+        "category": "Factories"
+      },
+      "id": "ID_00058"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86701000000005,
+          30.89813000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Nahar Spinning Mills Limited 427",
+        "category": "Factories"
+      },
+      "id": "ID_00059"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.06185400000004,
+          30.85278000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "NAMDHARI INDUSTRIAL TRADERS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00060"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.01460040300003,
+          30.87251644900005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "NEXO INDUSTRIES PVT LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00061"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.98747832100008,
+          30.87116488400005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "OSHO TOOLS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00062"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.98747832100008,
+          30.87116488400005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "OSHO TOOLS PRIVATE LIMITED UNIT-II",
+        "category": "Factories"
+      },
+      "id": "ID_00063"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.00818101200008,
+          30.87106503400003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Oster Knit (P) Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00064"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.01411165500008,
+          30.87202206600006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PARAMOUNT SYNTEX LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00065"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.99767452800006,
+          30.88299542700003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PRIME STEEL PROCESSORS",
+        "category": "Factories"
+      },
+      "id": "ID_00066"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.05365500000005,
+          30.89534500000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PUNDRIK TEXTILE MILLS PVT. LTD.",
+        "category": "Factories"
+      },
+      "id": "ID_00067"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86625000000004,
+          30.90001600000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "R.B.KNIT EXPORTS",
+        "category": "Factories"
+      },
+      "id": "ID_00068"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86974539000005,
+          30.89474941000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RENNY STRIPS LIMITED.",
+        "category": "Factories"
+      },
+      "id": "ID_00069"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.02796000700005,
+          30.86306446700007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "S.S Food Industries",
+        "category": "Factories"
+      },
+      "id": "ID_00070"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.04511661900005,
+          30.88351180300003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SHIVA GLASS INDUSTRIES PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00071"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.12293592800006,
+          30.89533973800008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SHRAMANJI INDUSTRIES PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00072"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.99074862700007,
+          30.87757085100003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SUNTEX CLOTHING LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00073"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.05135043700005,
+          30.89033657300007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SWARAN TEXTILES PRIVATE LIMITED.",
+        "category": "Factories"
+      },
+      "id": "ID_00074"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.01126419500008,
+          30.87194134900005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "UDEY CRAFTS",
+        "category": "Factories"
+      },
+      "id": "ID_00075"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.02935149400008,
+          30.87863037600005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "VENUS INDUSTRIAL CORPORATION",
+        "category": "Factories"
+      },
+      "id": "ID_00076"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.99291113200007,
+          30.89035829800002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "VITAL STEEL BARS LLP",
+        "category": "Factories"
+      },
+      "id": "ID_00077"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87296000000003,
+          30.89775600000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "YARN PLUS",
+        "category": "Factories"
+      },
+      "id": "ID_00078"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.93272000000007,
+          30.88746000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ALLA MODA KNITWEAR PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00079"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90715000000006,
+          30.87987000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KARAN RUBBER PRIVATE LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00080"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.94279638000006,
+          30.87552312700006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KSC FORGE PVT.LIMITED (UNIT II)",
+        "category": "Factories"
+      },
+      "id": "ID_00081"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.92846605400007,
+          30.87012378000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/S PARAMOUNT AGRIPARTS",
+        "category": "Factories"
+      },
+      "id": "ID_00082"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.95042516800004,
+          30.87757183000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "NIKIT CHEM",
+        "category": "Factories"
+      },
+      "id": "ID_00083"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.92370221000004,
+          30.88696949100006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "P.V.M. Enterprises Private Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00084"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.93029543600005,
+          30.88455575900008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PEARL POLYMERS, UNIT-02",
+        "category": "Factories"
+      },
+      "id": "ID_00085"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.57584159600003,
+          30.65423895900005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pidilite Industries Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00086"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.92627804900008,
+          30.87219558300006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RAJNEESH CAST ALLOYS..",
+        "category": "Factories"
+      },
+      "id": "ID_00087"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.93187578300007,
+          30.87311571600003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SHINGORA TEXTILES LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00088"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.92815939800005,
+          30.87145178000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Shree Ganesh Industries",
+        "category": "Factories"
+      },
+      "id": "ID_00089"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.50361580000003,
+          30.82861660000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "DHILLON BROTHERS COLD STORE",
+        "category": "Factories"
+      },
+      "id": "ID_00090"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.53620820000003,
+          30.80561280000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/s Durable Pipes & Fittings Pvt. Ltd.",
+        "category": "Factories"
+      },
+      "id": "ID_00091"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.52758610000006,
+          30.81575280000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RAM KIRPA COLD STORAGE AND ICE FACTORY",
+        "category": "Factories"
+      },
+      "id": "ID_00092"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.17074220000006,
+          30.86329460000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "HANDA COLD STORE",
+        "category": "Factories"
+      },
+      "id": "ID_00093"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.68395110000006,
+          30.92748770000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "COSMAS RESEARCH LAB LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00094"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66483270000003,
+          30.92413200000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AJ HI TECH PLY PRODUCTS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00095"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.56629600000008,
+          30.92480310000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "GOLDEN PLYWOOD INDUSTRIES PVT LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00096"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.78946910000008,
+          30.91901960000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PORKISH DELIGHT",
+        "category": "Factories"
+      },
+      "id": "ID_00097"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66627150000005,
+          30.93253160000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "A 1 Papers Pvt Ltd",
+        "category": "Factories"
+      },
+      "id": "ID_00098"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.78091900000004,
+          30.92134440000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "VIKAS KNITS",
+        "category": "Factories"
+      },
+      "id": "ID_00099"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.67845140000003,
+          30.93899910000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SATKAR PAPER MILLS PVT.LTD.",
+        "category": "Factories"
+      },
+      "id": "ID_00100"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.73166210000005,
+          30.95730800000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "MILLION EXPORTER PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00101"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66277140000005,
+          30.93817510000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "DIXON ELECTRO APPLIANCES PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00102"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.64685530000008,
+          30.92051000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "DEVKI PLYWOOD",
+        "category": "Factories"
+      },
+      "id": "ID_00103"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66775370000005,
+          30.85497820000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SURYA ELECTRO CONTROLS",
+        "category": "Factories"
+      },
+      "id": "ID_00104"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66838530000007,
+          30.92654350000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PERFECT METTCAST PRIVATE LIMITED, Eariler Known as Eastman Mattcast Ltd",
+        "category": "Factories"
+      },
+      "id": "ID_00105"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81764980000008,
+          30.94728700000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "FOREVER FASHIONS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00106"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.72405860000003,
+          30.86467530000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "STAN AUTOS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00107"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.65653320000007,
+          30.93515740000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "EROS ENVIROTECH PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00108"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.67096870000006,
+          30.92476080000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RAMNEEK INTERNATIONAL PVT LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00109"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.38157130000008,
+          30.92806350000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RUDHRA ABRASIVES INDUSTRIES",
+        "category": "Factories"
+      },
+      "id": "ID_00110"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.78470520000008,
+          30.91504140000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PALTA HOSIERY FACTORY",
+        "category": "Factories"
+      },
+      "id": "ID_00111"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.68421100000006,
+          30.93895580000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/s Shree ganesh Agroils (Paper Div.)",
+        "category": "Factories"
+      },
+      "id": "ID_00112"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84858570000006,
+          30.94587030000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SELECTION KNITTERS (REGD)",
+        "category": "Factories"
+      },
+      "id": "ID_00113"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.65885830000008,
+          30.94820700000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "DEEPS TOOLS PVT LTD UNIT-II",
+        "category": "Factories"
+      },
+      "id": "ID_00114"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.79844490000005,
+          30.91903570000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "TRIDEV FASHION",
+        "category": "Factories"
+      },
+      "id": "ID_00115"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84888350000006,
+          30.93861640000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AADI KNIT FAB",
+        "category": "Factories"
+      },
+      "id": "ID_00116"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87074730000006,
+          30.95067190000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ABHINAV IMPEX",
+        "category": "Factories"
+      },
+      "id": "ID_00117"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83923360000006,
+          30.95371920000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ADINATH DYEING AND FINISHING MILLS",
+        "category": "Factories"
+      },
+      "id": "ID_00118"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88002700000004,
+          30.94551770000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ANKUSH KNITTING WORKS PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00119"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90387780000003,
+          30.91995790000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ANSH FABRICS",
+        "category": "Factories"
+      },
+      "id": "ID_00120"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89849720000007,
+          30.95841900000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ASHOKA HOSIERY PVT.LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00121"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89849720000007,
+          30.95841900000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ASHOKA HOSIERY PVT.LTD",
+        "category": "Factories"
+      },
+      "id": "ID_00122"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89849720000007,
+          30.95841900000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ATAM OSWAL HOSIERY (UNIT NO.II)",
+        "category": "Factories"
+      },
+      "id": "ID_00123"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90285410000007,
+          30.99724740000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AVON COTTEX PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00124"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89127360000003,
+          30.94856050000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "BHANDARI HOSIERY EXPORTS LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00125"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.94889870000003,
+          30.88148070000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bonn Nutrients Private Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00126"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87486980000006,
+          30.93836860000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "DIKSHA KNITWEARS PRIVATE LIMITED (UNIT-II)",
+        "category": "Factories"
+      },
+      "id": "ID_00127"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.66277140000005,
+          30.93817510000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dixon Electro Appliances Private Limited",
+        "category": "Factories"
+      },
+      "id": "ID_00128"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88124660000005,
+          30.89926800000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Duke Fashions (India) Ltd.",
+        "category": "Factories"
+      },
+      "id": "ID_00129"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83922250000006,
+          30.95410050000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "EAKTA DYEING & FINISHING HOUSE",
+        "category": "Factories"
+      },
+      "id": "ID_00130"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84931800000004,
+          30.95609590000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "GIO EXPORTS.",
+        "category": "Factories"
+      },
+      "id": "ID_00131"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84703940000003,
+          30.95701790000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jain Amar Clothing Pvt Ltd Unit III",
+        "category": "Factories"
+      },
+      "id": "ID_00132"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.77298100000007,
+          30.95627520000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "JAIN AMAR CLOTHING PVT.LTD. UNIT II",
+        "category": "Factories"
+      },
+      "id": "ID_00133"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83434860000006,
+          30.96311110000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "JAIN PACKWELL PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00134"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90395120000005,
+          30.95468820000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "JANAK SONS KNITWEAR PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00135"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85773110000008,
+          30.95914410000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "K.D FABRICS & APPARELS",
+        "category": "Factories"
+      },
+      "id": "ID_00136"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91269340000008,
+          30.97513760000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KAY JAIN PROCESSORS",
+        "category": "Factories"
+      },
+      "id": "ID_00137"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88283600000005,
+          30.94298170000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KUDU FABRICS",
+        "category": "Factories"
+      },
+      "id": "ID_00138"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87871530000007,
+          30.94517530000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/S CREATIVE CLOTHING",
+        "category": "Factories"
+      },
+      "id": "ID_00139"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.74450580000007,
+          30.97729930000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "M/s Star Foods",
+        "category": "Factories"
+      },
+      "id": "ID_00140"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90799910000004,
+          30.95568580000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "MARVEL DYRES & PROCESSORS Pvt .Ltd,",
+        "category": "Factories"
+      },
+      "id": "ID_00141"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84485020000005,
+          30.94364570000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "PRUTHI EXPORTS",
+        "category": "Factories"
+      },
+      "id": "ID_00142"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84541060000004,
+          30.95425930000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "R.R. JAIN INDUSTRIES",
+        "category": "Factories"
+      },
+      "id": "ID_00143"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90746600000006,
+          30.95536350000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sobhagia Sales Pvt. LTD ( Unit Classic Wears)",
+        "category": "Factories"
+      },
+      "id": "ID_00144"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89525300000008,
+          30.97082640000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SUKARTIK CLOTHING PRIVATE LIMITED",
+        "category": "Factories"
+      },
+      "id": "ID_00145"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84307830000006,
+          30.94877930000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Top Gear Fashions, B XXXII, E-14/1679, Bahadur Ke Road, Ludhiana",
+        "category": "Factories"
+      },
+      "id": "ID_00146"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87150480000008,
+          30.94164630000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "WHITE ROSE COLLECTIONS",
+        "category": "Factories"
+      },
+      "id": "ID_00147"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86905760000008,
+          30.93215650000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "YOUNGMAN WOOLLEN MILLS (P) LTD.",
+        "category": "Factories"
+      },
+      "id": "ID_00148"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89857620000004,
+          30.95653110000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "YOUNGMAN WOOLLEN MILLS (P)LTD BLANKET DIVISION",
+        "category": "Factories"
+      },
+      "id": "ID_00149"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86080000000004,
+          30.90670000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Civil Hospital Ludhiana",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00000"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.21750000000003,
+          30.70450000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Khanna SDH",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00001"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.47609700000004,
+          30.79380000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jagraon SDH",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00002"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.19100000000003,
+          30.83570000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Samrala SDH",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00003"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.58060000000006,
+          30.64410000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Raikot SDH",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00004"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.19719300000008,
+          30.91263176000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Machhiwara CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00005"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.26592000000005,
+          30.76562000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mannupur CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00006"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.06213900000006,
+          30.72431800000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Payal CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00007"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.93330000000003,
+          30.63330000000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Malaudh CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00008"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.97940000000006,
+          30.84060000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sahnewal CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00009"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87729000000007,
+          30.89107000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Koomkalan CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00010"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81829070000003,
+          30.87887220000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pakhowal CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00011"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.64877400000006,
+          30.77438100000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sudhar CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00012"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.42970000000008,
+          30.60070000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hathur CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00013"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84610000000004,
+          30.74250000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dehlon CHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00014"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89068200000008,
+          30.91112300000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Vardman UCHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00015"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83020500000003,
+          30.88079900000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jawaddi UCHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00016"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84000000000003,
+          30.92000000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "UCHC Civil Surgeon Complex",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00017"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87520000000006,
+          30.86690000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Shimlapuri UCHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00018"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88402000000008,
+          30.93521900000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Subhash Nagar UCHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00019"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.88940000000008,
+          30.85890000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Giaspura UCHC",
+        "category": "Government Hospitals"
+      },
+      "id": "ID_00020"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84422400000005,
+          30.89230600000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SADANA CLINIC",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00000"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83687878200004,
+          30.88877122400004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mittal Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00001"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90904500000005,
+          30.89474100000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lama Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00002"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85101506700005,
+          30.87432655300006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr Pami Singh‘s Neuro-Psychiatry Centre",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00003"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84420000000006,
+          30.89260000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Suman Hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00004"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83457700000008,
+          30.86157800000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "hicare hospital pvt ltd",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00005"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.79875500000003,
+          30.88669300000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "N. K. AGGARWAL JOINTS & SPINE CENTRE",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00006"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.94923140000003,
+          30.88237690000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jindal hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00007"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81799000000007,
+          30.90006000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dhanuka Neurocare ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00008"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.77564100000006,
+          30.88349000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "GLOBAL HEART AND SUPER SPECIALITY HOSPITAL",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00009"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85850300000004,
+          30.88358400000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "LIFELINE HOSPITAL",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00010"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81526930000007,
+          30.92635930000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Saubhagya Multi speciality hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00011"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81938500000007,
+          30.91263700000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Advanced Centre for Eyes, Ludhiana ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00012"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83405421500004,
+          30.91647624100005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bawa Hospital Pvt. Ltd.",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00013"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82457000000005,
+          30.91421800000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AIMC BASSI HOSPITAL",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00014"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90360000000004,
+          30.90390000000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Asian multispeciality hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00015"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85288100000008,
+          30.88942200000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KHARAY HOSPITAL ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00016"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83550000000008,
+          30.88630000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Kosmoss bone and joint centre ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00017"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85970000000003,
+          30.90660000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr. Gagandeep Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00018"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86745812300006,
+          30.91020147100005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ludhiana Nursing Home pvt Ltd",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00019"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83853330000005,
+          30.88263910000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "HMC Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00020"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89580000000007,
+          30.91020000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dev hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00021"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82610000000005,
+          30.86570000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Goyal hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00022"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.77973900000006,
+          30.92006500000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jindals healing hand hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00023"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84226000000007,
+          30.89559400000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dua Medical Center ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00024"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83825000000007,
+          30.90210000000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gupta Clinic ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00025"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83711125100007,
+          30.90870067300006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Magnus diagnostic and intervention Centre private limited",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00026"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86324200000007,
+          30.91591600000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bali Clinic ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00027"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.89230000000003,
+          30.91260000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bhinder Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00028"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86566000000005,
+          30.91471000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Anupam Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00029"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86407163600006,
+          30.92930443600005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "USPC Jain Charitable Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00030"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.03500000000008,
+          30.79400000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mehta Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00031"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82319200000006,
+          30.91656700000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr Gupta Piles & General Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00032"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90751199600004,
+          30.89785448100002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Vardaan Hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00033"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.50354000000004,
+          30.54012000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Chhabra Hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00034"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.90777450000007,
+          30.89592800000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Om eye hospital",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00035"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.03340000000003,
+          30.80390000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bhangoo hospital doraha ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00036"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81192911000005,
+          30.92222935800004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sibia Medical Centre",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00037"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.50319000000007,
+          30.51440000000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jain bone and joint hospital and surgical center",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00038"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87180000000006,
+          30.87470000000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "JUNEJA HOSPITAL",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00039"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.48150000000004,
+          30.53095000000008,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Advisha Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00040"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84000000000003,
+          30.91340000000002,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr Arun Thapar",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00041"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.79865000000007,
+          30.85349900000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "BHALLA HOSPITAL ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00042"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81390000000005,
+          30.92262500000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SINGLA HOSPITAL",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00043"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84311900000006,
+          30.86712700000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Aggarwalz orthofitness center ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00044"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.84170000000006,
+          30.86710000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Aggarwalz clinic ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00045"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.50595104000007,
+          30.52489504000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Skin Rise Clinic ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00046"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83950920000007,
+          30.88624230000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Prime Care Clinic ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00047"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85727700000007,
+          30.90096500000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "RG STONE AND SUPER SPECIALTY HOSPITAL PVT LTD ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00048"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82686600000005,
+          30.90717800000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Seth Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00049"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81672790900006,
+          30.92739596000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "AROGYA HOSPITAL",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00051"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86018910900003,
+          30.87499225200003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "ANANDJYOT Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00052"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81796840000004,
+          30.91590930000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr Soods Healthcare",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00053"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87490000000008,
+          30.91290000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gupta children hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00054"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.50260000000003,
+          30.53800000000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Khosla Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00055"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82920000000007,
+          30.91900000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "BK Chest, Allergy & Sleep Clinic",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00056"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83435558500008,
+          30.86197835000007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Union Superspeciality Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00057"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.49288000000007,
+          30.54487000000006,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr Anil Talwar ( Dermatologist)",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00058"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.48226000000005,
+          30.54504000000003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KHANNA CLINIC ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00059"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.79070000000007,
+          30.91830000000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "World Diabetes Centre ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00060"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.78134448000003,
+          30.89639294100004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "KG Hospital ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00061"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82150000000007,
+          30.89790000000005,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Kanish Mediclinics",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00062"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85727700000007,
+          30.90096500000004,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ultrasound ",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00063"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83886066500008,
+          30.89751973800003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Batra scanning centre",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00064"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.83424321700005,
+          30.86368761800003,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dr RK Gupta, OPD Clinic",
+        "category": "Private Medical Facilities"
+      },
+      "id": "ID_00065"
+    }
+  ]
+}

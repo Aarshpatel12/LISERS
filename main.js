@@ -330,15 +330,15 @@ function handleMarkerClick(properties, feature) {
         fillOpacity: 1
       }).addTo(activeVisuals);
       
-      // Auto adjust bounds to show both
-      const routeBounds = L.latLngBounds([factoryLatLng, hLatLng]);
-      map.fitBounds(routeBounds, { padding: [100, 100], maxZoom: 14 });
+      // Auto adjust bounds to show both (removed to prevent popup from closing)
+      // const routeBounds = L.latLngBounds([factoryLatLng, hLatLng]);
+      // map.fitBounds(routeBounds, { padding: [100, 100], maxZoom: 14 });
     } else {
-      map.flyTo(factoryLatLng, 14);
+      // map.flyTo(factoryLatLng, 14);
     }
   } else if (feature) {
-    const latLng = L.latLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
-    map.flyTo(latLng, 15);
+    // const latLng = L.latLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
+    // map.flyTo(latLng, 15);
   }
 }
 

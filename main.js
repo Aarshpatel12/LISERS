@@ -86,6 +86,9 @@ async function init() {
 
 // Export logic for the window
 window.exportContactsCSV = exportContactsCSV;
+window.closeActivePopup = () => {
+  if (map) map.closePopup();
+};
 
 // Modal Logic
 function initModal() {
@@ -392,7 +395,7 @@ function updateMap() {
           <div class="arcgis-controls">
             <span style="font-size: 14px; margin-top: -2px;">&#8964;</span> 
             <span style="border: 1px solid #ccc; padding: 0 4px; border-radius: 2px;">&#10064;</span>
-            <span onclick="map.closePopup()" style="font-weight: bold; margin-left: 4px; cursor: pointer;" title="Close">&#10005;</span>
+            <span onclick="closeActivePopup()" style="font-weight: bold; margin-left: 4px; cursor: pointer;" title="Close">&#10005;</span>
           </div>
         </div>
         <div class="arcgis-body">

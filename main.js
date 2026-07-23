@@ -8,6 +8,8 @@ let activeFilters = new Set();
 let userMarker = null;
 let searchQuery = '';
 let currentFilteredFeatures = [];
+let isAuthenticated = false;
+let pendingModal = null;
 
 const categoryColors = {
   'Factories': '#ef4444', // Red
@@ -58,6 +60,7 @@ async function init() {
     // Initialize Modal Events
     initModal();
     initIndustryModal();
+    initLoginModal();
   } catch (err) {
     console.error("Error loading data:", err);
   }
@@ -98,7 +101,12 @@ function initModal() {
   const form = document.getElementById('facility-form');
 
   addBtn.addEventListener('click', () => {
-    modal.classList.add('active');
+    if (!isAuthenticated) {
+      pendingModal = modal;
+      document.getElementById('login-modal').classList.add('active');
+    } else {
+      modal.classList.add('active');
+    }
   });
 
   closeBtn.addEventListener('click', () => {
@@ -190,7 +198,12 @@ function initIndustryModal() {
   const form = document.getElementById('industry-form');
 
   addBtn.addEventListener('click', () => {
-    modal.classList.add('active');
+    if (!isAuthenticated) {
+      pendingModal = modal;
+      document.getElementById('login-modal').classList.add('active');
+    } else {
+      modal.classList.add('active');
+    }
   });
 
   closeBtn.addEventListener('click', () => {
@@ -249,6 +262,55 @@ function initIndustryModal() {
     updateMap();
     modal.classList.remove('active');
     form.reset();
+  });
+}
+
+function initLoginModal() {
+  const loginModal = document.getElementById('login-modal');
+  const closeLoginBtn = document.getElementById('close-login-btn');
+  const loginForm = document.getElementById('login-form');
+  const errorMsg = document.getElementById('login-error');
+  const modalContent = loginModal.querySelector('.modal-content');
+
+  closeLoginBtn.addEventListener('click', () => {
+    loginModal.classList.remove('active');
+    pendingModal = null;
+    loginForm.reset();
+    errorMsg.style.display = 'none';
+  });
+
+  loginModal.addEventListener('click', (e) => {
+    if (e.target === loginModal) {
+      loginModal.classList.remove('active');
+      pendingModal = null;
+      loginForm.reset();
+      errorMsg.style.display = 'none';
+    }
+  });
+
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const user = document.getElementById('login-username').value;
+    const pass = document.getElementById('login-password').value;
+
+    if (user === 'admin' && pass === 'admin') {
+      isAuthenticated = true;
+      loginModal.classList.remove('active');
+      loginForm.reset();
+      errorMsg.style.display = 'none';
+      
+      // Open the modal they were trying to access
+      if (pendingModal) {
+        pendingModal.classList.add('active');
+        pendingModal = null;
+      }
+    } else {
+      errorMsg.style.display = 'block';
+      modalContent.classList.remove('shake');
+      // Trigger reflow to restart animation
+      void modalContent.offsetWidth;
+      modalContent.classList.add('shake');
+    }
   });
 }
 

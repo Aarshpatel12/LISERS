@@ -753,3 +753,15 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Login Shake Animation */
+@keyframes shake {
+  0%, 100% { transform: translateY(0) scale(1) translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(0) scale(1) translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateY(0) scale(1) translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both !important;
+}
+}

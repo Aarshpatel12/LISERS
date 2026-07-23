@@ -57,6 +57,7 @@ async function init() {
     
     // Initialize Modal Events
     initModal();
+    initIndustryModal();
   } catch (err) {
     console.error("Error loading data:", err);
   }
@@ -162,6 +163,75 @@ function initModal() {
       },
       properties: properties,
       id: "CUSTOM_ID_" + Date.now()
+    };
+
+    // Save to all features
+    allFeatures.push(newFeature);
+    
+    // Persist to local storage
+    const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+    customData.push(newFeature);
+    localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+
+    // Update UI
+    updateMap();
+    modal.classList.remove('active');
+    form.reset();
+  });
+}
+
+function initIndustryModal() {
+  const modal = document.getElementById('add-industry-modal');
+  const addBtn = document.getElementById('add-industry-btn');
+  const closeBtn = document.getElementById('close-industry-modal-btn');
+  const form = document.getElementById('industry-form');
+
+  addBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('active');
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('ind-name').value;
+    const address = document.getElementById('ind-address').value;
+    const lat = parseFloat(document.getElementById('ind-lat').value);
+    const lng = parseFloat(document.getElementById('ind-lng').value);
+    const type = document.getElementById('ind-type').value;
+    const chemicals = document.getElementById('ind-chemicals').value;
+    const risk = document.getElementById('ind-risk').value;
+    const process = document.getElementById('ind-process').value;
+    const contact = document.getElementById('ind-contact').value;
+    const email = document.getElementById('ind-email').value;
+
+    const properties = {
+      name: name,
+      category: 'Factories',
+      Address: address,
+      Industry_Type_Classification: type,
+      Potential_Hazardous_Chemical_or_Gas: chemicals,
+      Risk_Level_Catagory: risk,
+      Material_Process_Due_Which_Catagoty: process,
+      Contact_Number: contact,
+      Email_ID: email
+    };
+
+    const newFeature = {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [lng, lat, 0]
+      },
+      properties: properties,
+      id: "CUSTOM_IND_ID_" + Date.now()
     };
 
     // Save to all features

@@ -51,7 +51,11 @@
         <div class="actions-section">
           <button class="action-btn outline" id="add-facility-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-            Add Facility
+            Add Health
+          </button>
+          <button class="action-btn outline" id="add-industry-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            Add Industry
           </button>
           <button id="export-btn" class="action-btn outline-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
@@ -259,6 +263,68 @@
           </div>
           <div class="modal-footer">
             <button type="submit" class="action-btn" style="width: 100%;">Submit Facility</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Data of Industries Form Modal -->
+    <div id="add-industry-modal" class="modal-overlay">
+      <div class="modal-content glass-panel">
+        <div class="modal-header">
+          <h2>Data of Industries Form</h2>
+          <button id="close-industry-modal-btn" class="close-btn" type="button">&times;</button>
+        </div>
+        <form id="industry-form">
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label>Name of Industry *</label>
+              <input type="text" id="ind-name" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Address *</label>
+              <textarea id="ind-address" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Geo-Coordinates (Latitude) *</label>
+              <input type="number" step="any" id="ind-lat" required />
+            </div>
+            <div class="form-group">
+              <label>Geo-Coordinates (Longitude) *</label>
+              <input type="number" step="any" id="ind-lng" required />
+            </div>
+            <div class="form-group">
+              <label>Industry Type / Classification *</label>
+              <input type="text" id="ind-type" required />
+            </div>
+            <div class="form-group">
+              <label>Potential Hazardous Chemicals / Gases *</label>
+              <input type="text" id="ind-chemicals" required />
+            </div>
+            <div class="form-group">
+              <label>Risk Level *</label>
+              <select id="ind-risk" required>
+                <option value="">Select...</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Green">Green</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Material / Process Due to Which Categorized</label>
+              <input type="text" id="ind-process" />
+            </div>
+            <div class="form-group">
+              <label>Contact of Industry *</label>
+              <input type="text" id="ind-contact" required />
+            </div>
+            <div class="form-group">
+              <label>Email ID *</label>
+              <input type="email" id="ind-email" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="action-btn" style="width: 100%;">Submit Industry</button>
           </div>
         </form>
       </div>

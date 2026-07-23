@@ -10,6 +10,8 @@ let searchQuery = '';
 let currentFilteredFeatures = [];
 let isAuthenticated = false;
 let pendingModal = null;
+let currentEditingId = null;
+let pendingEditId = null;
 
 const categoryColors = {
   'Factories': '#ef4444', // Red
@@ -46,9 +48,24 @@ async function init() {
     const response = await fetch('/data.json');
     const data = await response.json();
     
-    // Load custom features from local storage
+    // Assign deterministic IDs to base features
+    data.features.forEach((f, i) => {
+      f.id = 'BASE_' + i;
+    });
+
+    // Load custom features (which now includes both brand new features AND edits to base features)
     const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
-    allFeatures = [...data.features, ...customData];
+    
+    const customDataMap = new Map();
+    customData.forEach(f => customDataMap.set(f.id, f));
+
+    // Merge base data with edits
+    const mergedBaseFeatures = data.features.map(f => customDataMap.has(f.id) ? customDataMap.get(f.id) : f);
+
+    // Extract truly new features (not base edits)
+    const newFeatures = customData.filter(f => !String(f.id).startsWith('BASE_'));
+
+    allFeatures = [...mergedBaseFeatures, ...newFeatures];
     
     // Default all filters to ON
     Object.keys(categoryColors).forEach(cat => activeFilters.add(cat));
@@ -92,6 +109,75 @@ window.exportContactsCSV = exportContactsCSV;
 window.closeActivePopup = () => {
   if (map) map.closePopup();
 };
+window.triggerEdit = (id) => {
+  if (!isAuthenticated) {
+    pendingEditId = id;
+    document.getElementById('login-modal').classList.add('active');
+    return;
+  }
+  
+  const feature = allFeatures.find(f => String(f.id) === String(id));
+  if (!feature) return;
+
+  currentEditingId = id;
+  const isIndustry = feature.properties.category === 'Factories';
+  const modalId = isIndustry ? 'add-industry-modal' : 'add-facility-modal';
+  const modal = document.getElementById(modalId);
+  const form = document.getElementById(isIndustry ? 'industry-form' : 'facility-form');
+  
+  // Populate form based on properties
+  if (isIndustry) {
+    document.getElementById('ind-name').value = feature.properties.name || '';
+    document.getElementById('ind-address').value = feature.properties.Address || '';
+    document.getElementById('ind-lat').value = feature.geometry.coordinates[1];
+    document.getElementById('ind-lng').value = feature.geometry.coordinates[0];
+    document.getElementById('ind-type').value = feature.properties.Industry_Type_Classification || '';
+    document.getElementById('ind-chemicals').value = feature.properties.Potential_Hazardous_Chemical_or_Gas || '';
+    document.getElementById('ind-risk').value = feature.properties.Risk_Level_Catagory || '';
+    document.getElementById('ind-process').value = feature.properties.Material_Process_Due_Which_Catagoty || '';
+    document.getElementById('ind-contact').value = feature.properties.Contact_Number || '';
+    document.getElementById('ind-email').value = feature.properties.Email_ID || '';
+    
+    // Change button text
+    form.querySelector('button[type="submit"]').textContent = 'Update Industry';
+  } else {
+    document.getElementById('ff-name').value = feature.properties.name || '';
+    document.getElementById('ff-type').value = feature.properties.Type_of_Facility || '';
+    document.getElementById('ff-category').value = feature.properties.Category || '';
+    document.getElementById('ff-ownership').value = feature.properties.Ownership || '';
+    document.getElementById('ff-hospital-category').value = feature.properties.Hospital_Catagory || '';
+    document.getElementById('ff-address').value = feature.properties.Complete_Address || '';
+    document.getElementById('ff-lat').value = feature.geometry.coordinates[1];
+    document.getElementById('ff-lng').value = feature.geometry.coordinates[0];
+    document.getElementById('ff-district').value = feature.properties.District || '';
+    document.getElementById('ff-block').value = feature.properties['Block/Tehsil'] || '';
+    document.getElementById('ff-ward').value = feature.properties['Ward/Village'] || '';
+    document.getElementById('ff-beds').value = feature.properties.Total_Bed_Capacity || '';
+    document.getElementById('ff-icu').value = feature.properties['ICU_Beds_(Yes/No_&_Number)'] || '';
+    document.getElementById('ff-emergency').value = feature.properties['Emergency_Services_(24x7)'] || '';
+    document.getElementById('ff-ot').value = feature.properties.Operation_Theatre || '';
+    document.getElementById('ff-oxygen').value = feature.properties.Oxygen_Facility || '';
+    document.getElementById('ff-ambulance').value = feature.properties.Ambulance_Availability || '';
+    document.getElementById('ff-doctors').value = feature.properties.Number_of_Doctors || '';
+    document.getElementById('ff-specialists').value = feature.properties.Number_of_Specialists || '';
+    document.getElementById('ff-nurses').value = feature.properties.Nursing_Staff_Strength || '';
+    document.getElementById('ff-paramedical').value = feature.properties.Paramedical_Staff_Strength || '';
+    document.getElementById('ff-departments').value = feature.properties.Departments_Available || '';
+    document.getElementById('ff-diagnostic').value = feature.properties.Diagnostic_Facilities || '';
+    document.getElementById('ff-pharmacy').value = feature.properties.Pharmacy || '';
+    document.getElementById('ff-disaster').value = feature.properties.Disaster_Response_Readiness || '';
+    document.getElementById('ff-tieups').value = feature.properties.Emergency_Tie_ups || '';
+    document.getElementById('ff-incharge').value = feature.properties.Name_of_In_charge || '';
+    document.getElementById('ff-contact').value = feature.properties.Contact_Number || '';
+    document.getElementById('ff-email').value = feature.properties.Email_ID || '';
+    
+    // Change button text
+    form.querySelector('button[type="submit"]').textContent = 'Update Facility';
+  }
+  
+  if (map) map.closePopup();
+  modal.classList.add('active');
+};
 
 // Modal Logic
 function initModal() {
@@ -101,6 +187,10 @@ function initModal() {
   const form = document.getElementById('facility-form');
 
   addBtn.addEventListener('click', () => {
+    currentEditingId = null;
+    form.reset();
+    form.querySelector('button[type="submit"]').textContent = 'Submit Facility';
+    
     if (!isAuthenticated) {
       pendingModal = modal;
       document.getElementById('login-modal').classList.add('active');
@@ -166,23 +256,44 @@ function initModal() {
       properties.category = 'Private Medical Facilities';
     }
 
-    const newFeature = {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [lng, lat, 0]
-      },
-      properties: properties,
-      id: "CUSTOM_ID_" + Date.now()
-    };
+    if (currentEditingId) {
+      const existingFeatureIndex = allFeatures.findIndex(f => String(f.id) === String(currentEditingId));
+      if (existingFeatureIndex > -1) {
+        // Keep the original ID
+        const existingFeature = allFeatures[existingFeatureIndex];
+        const updatedFeature = {
+          type: "Feature",
+          geometry: { type: "Point", coordinates: [lng, lat, 0] },
+          properties: properties,
+          id: existingFeature.id
+        };
+        allFeatures[existingFeatureIndex] = updatedFeature;
+        
+        // Update local storage
+        let customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+        const customIdx = customData.findIndex(f => String(f.id) === String(currentEditingId));
+        if (customIdx > -1) {
+          customData[customIdx] = updatedFeature;
+        } else {
+          customData.push(updatedFeature);
+        }
+        localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+      }
+      currentEditingId = null;
+    } else {
+      const newFeature = {
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [lng, lat, 0] },
+        properties: properties,
+        id: "CUSTOM_ID_" + Date.now()
+      };
 
-    // Save to all features
-    allFeatures.push(newFeature);
-    
-    // Persist to local storage
-    const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
-    customData.push(newFeature);
-    localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+      allFeatures.push(newFeature);
+      
+      const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+      customData.push(newFeature);
+      localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+    }
 
     // Update UI
     updateMap();
@@ -198,6 +309,10 @@ function initIndustryModal() {
   const form = document.getElementById('industry-form');
 
   addBtn.addEventListener('click', () => {
+    currentEditingId = null;
+    form.reset();
+    form.querySelector('button[type="submit"]').textContent = 'Submit Industry';
+
     if (!isAuthenticated) {
       pendingModal = modal;
       document.getElementById('login-modal').classList.add('active');
@@ -240,23 +355,42 @@ function initIndustryModal() {
       Email_ID: email
     };
 
-    const newFeature = {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [lng, lat, 0]
-      },
-      properties: properties,
-      id: "CUSTOM_IND_ID_" + Date.now()
-    };
+    if (currentEditingId) {
+      const existingFeatureIndex = allFeatures.findIndex(f => String(f.id) === String(currentEditingId));
+      if (existingFeatureIndex > -1) {
+        const existingFeature = allFeatures[existingFeatureIndex];
+        const updatedFeature = {
+          type: "Feature",
+          geometry: { type: "Point", coordinates: [lng, lat, 0] },
+          properties: properties,
+          id: existingFeature.id
+        };
+        allFeatures[existingFeatureIndex] = updatedFeature;
+        
+        let customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+        const customIdx = customData.findIndex(f => String(f.id) === String(currentEditingId));
+        if (customIdx > -1) {
+          customData[customIdx] = updatedFeature;
+        } else {
+          customData.push(updatedFeature);
+        }
+        localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+      }
+      currentEditingId = null;
+    } else {
+      const newFeature = {
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [lng, lat, 0] },
+        properties: properties,
+        id: "CUSTOM_IND_ID_" + Date.now()
+      };
 
-    // Save to all features
-    allFeatures.push(newFeature);
-    
-    // Persist to local storage
-    const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
-    customData.push(newFeature);
-    localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+      allFeatures.push(newFeature);
+      
+      const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+      customData.push(newFeature);
+      localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+    }
 
     // Update UI
     updateMap();
@@ -299,8 +433,10 @@ function initLoginModal() {
       loginForm.reset();
       errorMsg.style.display = 'none';
       
-      // Open the modal they were trying to access
-      if (pendingModal) {
+      if (pendingEditId) {
+        triggerEdit(pendingEditId);
+        pendingEditId = null;
+      } else if (pendingModal) {
         pendingModal.classList.add('active');
         pendingModal = null;
       }
@@ -457,6 +593,7 @@ function updateMap() {
           <div class="arcgis-controls">
             <span style="font-size: 14px; margin-top: -2px;">&#8964;</span> 
             <span style="border: 1px solid #ccc; padding: 0 4px; border-radius: 2px;">&#10064;</span>
+            <span onclick="triggerEdit('${feature.id}')" style="font-size: 15px; margin-left: 4px; cursor: pointer; color: #444;" title="Edit Facility">&#9998;</span>
             <span onclick="closeActivePopup()" style="font-weight: bold; margin-left: 4px; cursor: pointer;" title="Close">&#10005;</span>
           </div>
         </div>

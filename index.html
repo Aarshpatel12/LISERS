@@ -49,6 +49,10 @@
         </div>
 
         <div class="actions-section">
+          <button class="action-btn outline" id="add-facility-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            Add Facility
+          </button>
           <button id="export-btn" class="action-btn outline-btn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Export Contacts
@@ -82,5 +86,182 @@
 
     <!-- Application Script -->
     <script type="module" src="./main.js"></script>
+
+    <!-- Health Facility Information Form Modal -->
+    <div id="add-facility-modal" class="modal-overlay">
+      <div class="modal-content glass-panel">
+        <div class="modal-header">
+          <h2>Health Facility Information Form</h2>
+          <button id="close-modal-btn" class="close-btn" type="button">&times;</button>
+        </div>
+        <form id="facility-form">
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label>Name of Health Facility *</label>
+              <input type="text" id="ff-name" required />
+            </div>
+            <div class="form-group">
+              <label>Type of Facility *</label>
+              <select id="ff-type" required>
+                <option value="">Select...</option>
+                <option value="Government">Government</option>
+                <option value="Private">Private</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Category *</label>
+              <select id="ff-category" required>
+                <option value="">Select...</option>
+                <option value="Hospital">Hospital</option>
+                <option value="CHC">CHC</option>
+                <option value="PHC">PHC</option>
+                <option value="Clinic">Clinic</option>
+                <option value="Nursing Home">Nursing Home</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Ownership *</label>
+              <select id="ff-ownership" required>
+                <option value="">Select...</option>
+                <option value="State Govt">State Govt</option>
+                <option value="Central Govt">Central Govt</option>
+                <option value="Trust">Trust</option>
+                <option value="Private">Private</option>
+                <option value="Corporate">Corporate</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Hospital Category *</label>
+              <select id="ff-hospital-category" required>
+                <option value="">Select...</option>
+                <option value="Speciality Hospital">Speciality Hospital</option>
+                <option value="Multi Speciality Hospital">Multi Speciality Hospital</option>
+                <option value="Not Applicable">Not Applicable</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label>Complete Address *</label>
+              <textarea id="ff-address" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Geo-coordinates (Latitude) *</label>
+              <input type="number" step="any" id="ff-lat" required />
+            </div>
+            <div class="form-group">
+              <label>Geo-coordinates (Longitude) *</label>
+              <input type="number" step="any" id="ff-lng" required />
+            </div>
+            <div class="form-group">
+              <label>District *</label>
+              <input type="text" id="ff-district" placeholder="e.g., Ludhiana" required />
+            </div>
+            <div class="form-group">
+              <label>Block/Tehsil</label>
+              <input type="text" id="ff-block" />
+            </div>
+            <div class="form-group">
+              <label>Ward/Village</label>
+              <input type="text" id="ff-ward" />
+            </div>
+            <div class="form-group">
+              <label>Total Bed Capacity *</label>
+              <input type="number" id="ff-beds" required />
+            </div>
+            <div class="form-group">
+              <label>ICU Beds (Yes/No & Number) *</label>
+              <input type="text" id="ff-icu" placeholder="e.g., Yes, 10" required />
+            </div>
+            <div class="form-group">
+              <label>Emergency Services (24x7) *</label>
+              <select id="ff-emergency" required>
+                <option value="">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Operation Theatre *</label>
+              <select id="ff-ot" required>
+                <option value="">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Oxygen Facility *</label>
+              <select id="ff-oxygen" required>
+                <option value="">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Ambulance Availability *</label>
+              <input type="text" id="ff-ambulance" placeholder="e.g., Yes, 2" required />
+            </div>
+            <div class="form-group">
+              <label>Number of Doctors *</label>
+              <input type="number" id="ff-doctors" required />
+            </div>
+            <div class="form-group">
+              <label>Number of Specialists *</label>
+              <input type="number" id="ff-specialists" required />
+            </div>
+            <div class="form-group">
+              <label>Nursing Staff Strength *</label>
+              <input type="number" id="ff-nurses" required />
+            </div>
+            <div class="form-group">
+              <label>Paramedical Staff *</label>
+              <input type="number" id="ff-paramedical" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Departments Available *</label>
+              <input type="text" id="ff-departments" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Diagnostic Facilities *</label>
+              <input type="text" id="ff-diagnostic" required />
+            </div>
+            <div class="form-group">
+              <label>Pharmacy *</label>
+              <select id="ff-pharmacy" required>
+                <option value="">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Disaster Response Readiness *</label>
+              <select id="ff-disaster" required>
+                <option value="">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label>Emergency Tie-ups *</label>
+              <input type="text" id="ff-tieups" required />
+            </div>
+            <div class="form-group">
+              <label>Name of In-charge *</label>
+              <input type="text" id="ff-incharge" required />
+            </div>
+            <div class="form-group">
+              <label>Contact Number *</label>
+              <input type="text" id="ff-contact" required />
+            </div>
+            <div class="form-group">
+              <label>Email ID *</label>
+              <input type="email" id="ff-email" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="action-btn" style="width: 100%;">Submit Facility</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

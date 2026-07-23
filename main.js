@@ -43,7 +43,10 @@ async function init() {
   try {
     const response = await fetch('/data.json');
     const data = await response.json();
-    allFeatures = data.features;
+    
+    // Load custom features from local storage
+    const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+    allFeatures = [...data.features, ...customData];
     
     // Default all filters to ON
     Object.keys(categoryColors).forEach(cat => activeFilters.add(cat));
@@ -51,6 +54,9 @@ async function init() {
     renderFilters();
     updateMap();
     updateStats();
+    
+    // Initialize Modal Events
+    initModal();
   } catch (err) {
     console.error("Error loading data:", err);
   }
@@ -75,6 +81,102 @@ async function init() {
   // Setup export button
   const exportBtn = document.getElementById('export-btn');
   exportBtn.addEventListener('click', exportContactsCSV);
+}
+
+// Export logic for the window
+window.exportContactsCSV = exportContactsCSV;
+
+// Modal Logic
+function initModal() {
+  const modal = document.getElementById('add-facility-modal');
+  const addBtn = document.getElementById('add-facility-btn');
+  const closeBtn = document.getElementById('close-modal-btn');
+  const form = document.getElementById('facility-form');
+
+  addBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('active');
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('ff-name').value;
+    const type = document.getElementById('ff-type').value;
+    const category = document.getElementById('ff-category').value;
+    const ownership = document.getElementById('ff-ownership').value;
+    const hospitalCategory = document.getElementById('ff-hospital-category').value;
+    const address = document.getElementById('ff-address').value;
+    const lat = parseFloat(document.getElementById('ff-lat').value);
+    const lng = parseFloat(document.getElementById('ff-lng').value);
+
+    // Build properties object
+    const properties = {
+      name: name,
+      category: category === 'Hospital' || category === 'CHC' || category === 'PHC' || category === 'Clinic' ? 'Government Hospitals' : 'Private Medical Facilities', // Map to marker groups
+      Type_of_Facility: type,
+      Category: category,
+      Ownership: ownership,
+      Hospital_Catagory: hospitalCategory,
+      Complete_Address: address,
+      District: document.getElementById('ff-district').value,
+      'Block/Tehsil': document.getElementById('ff-block').value,
+      'Ward/Village': document.getElementById('ff-ward').value,
+      Total_Bed_Capacity: document.getElementById('ff-beds').value,
+      'ICU_Beds_(Yes/No_&_Number)': document.getElementById('ff-icu').value,
+      'Emergency_Services_(24x7)': document.getElementById('ff-emergency').value,
+      Operation_Theatre: document.getElementById('ff-ot').value,
+      Oxygen_Facility: document.getElementById('ff-oxygen').value,
+      Ambulance_Availability: document.getElementById('ff-ambulance').value,
+      Number_of_Doctors: document.getElementById('ff-doctors').value,
+      Number_of_Specialists: document.getElementById('ff-specialists').value,
+      Nursing_Staff_Strength: document.getElementById('ff-nurses').value,
+      Paramedical_Staff_Strength: document.getElementById('ff-paramedical').value,
+      Departments_Available: document.getElementById('ff-departments').value,
+      Diagnostic_Facilities: document.getElementById('ff-diagnostic').value,
+      Pharmacy: document.getElementById('ff-pharmacy').value,
+      Disaster_Response_Readiness: document.getElementById('ff-disaster').value,
+      Emergency_Tie_ups: document.getElementById('ff-tieups').value,
+      Name_of_In_charge: document.getElementById('ff-incharge').value,
+      Contact_Number: document.getElementById('ff-contact').value,
+      Email_ID: document.getElementById('ff-email').value
+    };
+
+    // Fix category explicitly if it's Private
+    if (type === 'Private' && category !== 'Factories') {
+      properties.category = 'Private Medical Facilities';
+    }
+
+    const newFeature = {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [lng, lat, 0]
+      },
+      properties: properties,
+      id: "CUSTOM_ID_" + Date.now()
+    };
+
+    // Save to all features
+    allFeatures.push(newFeature);
+    
+    // Persist to local storage
+    const customData = JSON.parse(localStorage.getItem('lisers_custom_features') || '[]');
+    customData.push(newFeature);
+    localStorage.setItem('lisers_custom_features', JSON.stringify(customData));
+
+    // Update UI
+    updateMap();
+    modal.classList.remove('active');
+    form.reset();
+  });
 }
 
 function locateUser() {
